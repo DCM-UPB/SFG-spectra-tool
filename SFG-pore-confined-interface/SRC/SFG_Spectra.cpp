@@ -52,7 +52,7 @@ void FFT(vector<double> &vvacf,vector<double> & vvacf_r_fft,vector<double> & vva
 int main(int argc, char** argv)
 {
 
-  unsigned int  Traj_len = 0, N = 0, tcfl = 0, Auto = 0, Intra = 0, Inter = 0;                   // Traj_len = trajectory len, N - number of atoms in the given system, tcfl - time correlation function length
+  unsigned int  Traj_len = 0, N = 0, tcfl = 0, Auto = 0, Intra = 0, Inter = 0, N_strings;                   // Traj_len = trajectory len, N - number of atoms in the given system, tcfl - time correlation function length
   float dt = 0, rcut = 0, R1 = 0, R2 = 0;        // dt - time step in femtosecond, rcut - cross-correlation cutoff R1, R2 - inner and outer radius
   vector<double>  L(d, 0.0);                                     // r - atomic position, L - length of the simulation box, v - atomic velocity
   string dummy, filename1, filename2, filename3;
@@ -63,6 +63,7 @@ int main(int argc, char** argv)
   input >> dummy >> Traj_len  ; 
   input >> dummy >> N         ; 
   input >> dummy >> filename1 ; 
+  input >> dummy >> N_strings ; 
   input >> dummy >> filename2 ; 
   input >> dummy >> L[0] >> L[1] >> L[2] ; 
   input >> dummy >> dt        ; 

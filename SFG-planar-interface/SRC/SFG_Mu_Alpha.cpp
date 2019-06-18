@@ -35,7 +35,7 @@ int main(int argc, char** argv)
 {
 
 
-  unsigned int  Traj_len = 0, N = 0;                               // N - number of atoms in the given system
+  unsigned int  Traj_len = 0, N = 0, N_strings;                               // N - number of atoms in the given system
   float dt = 0;                                                    // dt - time step in femtosecond
   vector<double>  L(d, 0.0);                                       // r - atomic position, L - length of the simulation box, v - atomic velocity
   string dummy, filename1, filename2;
@@ -46,6 +46,7 @@ int main(int argc, char** argv)
   input >> dummy >> Traj_len  ; 
   input >> dummy >> N         ; 
   input >> dummy >> filename1 ; 
+  input >> dummy >> N_strings ; 
   input >> dummy >> filename2 ; 
   input >> dummy >> L[0] >> L[1] >> L[2] ; 
   input >> dummy >> dt        ;  
@@ -61,7 +62,7 @@ int main(int argc, char** argv)
   ifstream infile(filename1);
   for(unsigned int t = 0;t < Traj_len;++t)
     {
-      for (unsigned int words = 0 ; words < 4 ; words++)
+      for (unsigned int words = 0 ; words < N_strings + 1 ; words++)
         {
       	  infile  >> dummy; 
         }
