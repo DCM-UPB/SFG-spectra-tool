@@ -1,0 +1,38 @@
+1) 33000
+2) 843 
+3) ../Trajectory/planar.xyz   
+4) ../Trajectory/planar.vel 
+5)  21.75 21.75 100
+6) 0.6                                  
+7) 1000
+8) 6
+9) ../Trajectory/planar.SFG
+10) 1 0 0
+11) 8 to 12
+12) -8 to -6
+
+1) Trajectory length or no of frames
+2) Number of atoms
+3) Trajectory file name and location (input file)
+4) dipole moment and bond polarisability file name and location (output file)
+5) Length of the simulation box in x, y and z direction. PBC applied in x- and y-
+   directions, while free boundary condition is applied in z-direction, i.e., the
+   surface direction.
+6) Time step in femtosecond
+7) Time correlation function length (standard length is 1 ps). Larger tcfl will
+   lead to stastical uncertainties in the SFG spectra. Choose the optimum value. 
+8) cross-correlation cut off (standard cut-off is 6 angstrom) If you want
+   to include only the intra-cross correlation, that is within a water molecule
+   use only 2 angstrom.   
+9) SFG spectrum file name and location (output file). Quantum correction factor
+   and non-condon approximation are not included. Include explicitly. For
+   more information and simulation details, please check the following articles
+   https://doi.org/10.1063/1.4931106 and
+   https://doi.org/10.1080/00268976.2019.1620358 (<-see Supplementary information)
+10) Auto Intra-cross Inter-cross correlation. 1->will include the correlation 
+   0->will turn off the correlations. Even though cross correlations are                                               
+   essential to reproduce the experimental SFG measurements, in practice it is 
+   neglected due convergence issues and insufficient trajectories. 
+11) Surface region on the top side of the interface
+12) Surface region on the bottom side of the interface
+ 
