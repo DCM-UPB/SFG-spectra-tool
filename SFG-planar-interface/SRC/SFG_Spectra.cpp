@@ -261,7 +261,7 @@ int main(int argc, char** argv)
       FFT(vvacf,vvacf_i_fft,vvacf_r_fft, tcfl, dt);
 
       ofstream outfile_2(filename3);
-      outfile_2 << " # Freq imaginary-term Real-term \n";
+      outfile_2 << " #Freq   imaginary-term   Real-term \n";
       for(unsigned int freq = 0;freq < Nfreq;++freq)
         {  //         frequency         imaginary term                real term
           outfile_2 << freq << "   " << vvacf_i_fft[freq] << "   " << (-1) * vvacf_r_fft[freq] << "\n";
