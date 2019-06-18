@@ -22,7 +22,7 @@ length of the simulation box, time step, time correlation function length and th
 ```
 vim SRC/input
 ```
-Compile and Execute the program.  
+Compile and Execute the program.  **Requirements - C++11, Open MPI libraries**
 ```
 chmod +x simulate-SFG.sh
 ```
