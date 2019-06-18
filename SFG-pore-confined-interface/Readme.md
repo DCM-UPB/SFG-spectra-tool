@@ -15,7 +15,7 @@ cp -r your_files Trajectory/
 **Important note: The xyz file should contain only water molecules. The water molecules should be sorted in the order, where the oxygen atom coordinates should be followed by its two neighbour hydrogen atom. For reference
 please check this sample file [planar.xyz](https://github.com/DCM-UPB/SFG-spectrum/blob/master/SFG-planar-interface/Trajectory/planar.xyz).
 The xyz file should be in this [planar.xyz](https://github.com/DCM-UPB/SFG-spectrum/blob/master/SFG-planar-interface/Trajectory/planar.xyz).
- format. Notice also that the second lines should contain only three strings.**
+ format.**
 
 
 Define the trajectory length, number of atoms, trajectory file name and location,
