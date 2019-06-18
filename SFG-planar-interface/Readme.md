@@ -11,8 +11,8 @@ Copy your xyz file to the Trajectory folder.
 ```
 cp -r your_files Trajectory/ 
 ```
-**Important note: The xyz file should have only water molecules. The water molecules should be ordered. 
-Check this sample file [planar.xyz](https://github.com/DCM-UPB/SFG-spectrum/blob/master/SFG-planar-interface/Trajectory/planar.xyz).
+**Important note: The xyz file should contain only water molecules. The water molecules should be ordered. For reference
+please check this sample file [planar.xyz](https://github.com/DCM-UPB/SFG-spectrum/blob/master/SFG-planar-interface/Trajectory/planar.xyz).
 The xyz file should be in this [planar.xyz](https://github.com/DCM-UPB/SFG-spectrum/blob/master/SFG-planar-interface/Trajectory/planar.xyz).
  format. The second line should contain only three strings.**
 
@@ -22,15 +22,15 @@ length of the simulation box, time step, time correlation function length and th
 ```
 vim SRC/input
 ```
-Compile and Execute the program
+Compile and Execute the program.  
 ```
 chmod +x simulate-SFG.sh
 ```
 ```
 ./simulate-SFG.sh
 ```
-Plot the SFG spectrum, density profile simulated in the Trajectory folder. This program allows one to the compute the SFG spectrum 
-for given region in the interfacial system.
+Plot the SFG spectrum, density profile simulated in the Trajectory folder. This program allows one to compute the SFG spectrum 
+for the given region in an interfacial system.
 
 ![alt tag](https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/tmph20/0/tmph20.ahead-of-print/00268976.2019.1620358/20190522/images/medium/tmph_a_1620358_uf0001_oc.jpg)
 
