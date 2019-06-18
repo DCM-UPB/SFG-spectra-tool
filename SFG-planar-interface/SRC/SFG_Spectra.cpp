@@ -261,7 +261,7 @@ int main(int argc, char** argv)
 
       ofstream outfile_2(filename3);
       for(unsigned int freq = 0;freq < Nfreq;++freq)
-        {
+        {  //         frequency         imaginary term                real term
           outfile_2 << freq << "   " << vvacf_i_fft[freq] << "   " << (-1) * vvacf_r_fft[freq] << "\n";
           // Quantum correction factor and non-condon approximation are not included here. 
         }
