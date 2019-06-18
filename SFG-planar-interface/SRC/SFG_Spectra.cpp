@@ -257,12 +257,12 @@ int main(int argc, char** argv)
       outfile_1.close();
       outfile_1.clear();
 
-      FFT(vvacf,vvacf_r_fft,vvacf_i_fft, tcfl, dt);
+      FFT(vvacf,vvacf_i_fft,vvacf_r_fft, tcfl, dt);
 
       ofstream outfile_2(filename3);
       for(unsigned int freq = 0;freq < Nfreq;++freq)
         {
-          outfile_2 << freq << "   " << vvacf_r_fft[freq] << "   " << (-1) * vvacf_i_fft[freq] << "\n";
+          outfile_2 << freq << "   " << vvacf_i_fft[freq] << "   " << (-1) * vvacf_r_fft[freq] << "\n";
           // Quantum correction factor and non-condon approximation are not included here. 
         }
       outfile_2.close();
