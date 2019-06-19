@@ -30,7 +30,7 @@ chmod +x simulate-SFG.sh
 ```
 ./simulate-SFG.sh
 ```
-Plot the SFG spectrum, density profile simulated in the Trajectory folder. This program allows one to compute the SFG spectrum 
+Plot the SFG spectrum (.SFG), density profile (.DP) simulated in the Trajectory folder. This program allows one to compute the SFG spectrum 
 for the given region in a confined interface system.
 
 ![alt tag](https://github.com/DCM-UPB/SFG-spectra-tool/blob/master/SFG-pore-confined-interface/SRC/confined.jpg)
