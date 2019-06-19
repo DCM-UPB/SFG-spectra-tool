@@ -14,7 +14,7 @@ Copy your xyz file to the Trajectory folder.
 ```
 cp -r your_files Trajectory/ 
 ```
-**Important note: The xyz file should contain only water molecules. The water molecules should be sorted in an order, where the oxygen atom coordinates followed by its two neighbour hydrogen atoms. For reference
+**Important note: The xyz file should contain only water molecules. The water molecules should be sorted in an order, where the oxygen atom coordinate followed by its two neighbour hydrogen atoms. For reference
 please check this sample file [pore.xyz](https://github.com/DCM-UPB/SFG-spectra-tool/blob/master/SFG-pore-confined-interface/Trajectory/pore.xyz).**
 
 
