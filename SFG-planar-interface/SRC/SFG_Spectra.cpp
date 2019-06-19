@@ -264,7 +264,7 @@ int main(int argc, char** argv)
       ofstream outfile_2(filename3);
       outfile_2 << " #Freq   imaginary-term   Real-term \n";
       for(unsigned int freq = 0;freq < Nfreq;++freq)
-        {  //         frequency         imaginary term                real term
+        {  //         frequency         imaginary term                real term (negative sign is due to the imaginary unit i infront of the susceptibility)
           outfile_2 << freq << "   " << vvacf_i_fft[freq] << "   " << (-1) * vvacf_r_fft[freq] << "\n";
           // Quantum correction factor and non-condon approximation are not included here. 
         }
