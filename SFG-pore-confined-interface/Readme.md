@@ -2,10 +2,12 @@
 This program computes the SFG spectrum for a given pore interface system. 
 The spectrum is calculated usig the surface-specific velocity-velocity time correlation function formalism, 
 developed by [Nagata and Co-workers](https://aip.scitation.org/doi/10.1063/1.4931106). Recently, [Kühne and Co-workers](https://www.tandfonline.com/doi/full/10.1080/00268976.2019.1620358)
-have demonstrated that this formalism with intermolecular coupling effects can reproduce the experimental SFG spectra of water/air interface.
+have demonstrated that this formalism can quantitatively reproduce the experimental SFG spectra of water/air interface.
 
 
 ## How this program works?
+
+**System requirements - C++11, Open MPI libraries**
 
 Copy your xyz file to the Trajectory folder. 
 
@@ -21,7 +23,7 @@ length of the simulation box, time step, time correlation function length and th
 ```
 vim SRC/input
 ```
-Compile and Execute the program.  **System requirements - C++11, Open MPI libraries**
+Compile and Execute the program.  
 ```
 chmod +x simulate-SFG.sh
 ```
