@@ -29,8 +29,7 @@ chmod +x simulate-SFG.sh
 ```
 ./simulate-SFG.sh
 ```
-Plot the SFG spectrum (.SFG), density profile (.DP) simulated in the Trajectory folder. This program allows one to compute the SFG spectrum 
-for the given region in an interfacial system.
+Plot the SFG spectrum (.SFG), density profile (.DP) simulated in the Trajectory folder. This program also allows one to compute the SFG spectrum for the given layers in a planar interfacial system.
 
 ![alt tag](https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/tmph20/0/tmph20.ahead-of-print/00268976.2019.1620358/20190522/images/medium/tmph_a_1620358_uf0001_oc.jpg)
 
