@@ -18,7 +18,7 @@ please check this sample file [planar.xyz](https://github.com/DCM-UPB/SFG-spectr
 
 
 Define the trajectory length, number of atoms, trajectory file name and location,
-length of the simulation box, time step, time correlation function length and the interface regions.
+length of the simulation box, time step, time correlation function length and the interface regions in the SRC/input file.
 ```
 vim SRC/input
 ```
