@@ -214,7 +214,7 @@ int main(int argc, char** argv)
       outfile_1.close();
       outfile_1.clear();
 
-      // the imaginary and real terms are exchanged due to the imaginary unit i infront of  the equation
+      // the imaginary and real terms are exchanged due to the imaginary unit i infront of the resonant nonlinear susceptibility
       FFT(vvacf,vvacf_i_fft,vvacf_r_fft, tcfl, dt);
 
       ofstream outfile_2(filename3);
