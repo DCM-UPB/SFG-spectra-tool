@@ -194,8 +194,8 @@ int main(int argc, char** argv)
 
           double top =  (x1*x2+z1*z2) - 0.0001 ;
           double bot =  norm(x1,0,z1) * norm(x2,0,z2)  ;            
-          if(r[N*t*d+i*d+2] >=  0){ angle = 180 - acos(top/bot) * 57.296 ; }
-          else if (r[N*t*d+i*d+2] < 0){angle = acos(top/bot) * 57.296 - 180; }
+          if(r[N*t*d+i*d+0] >=  0){ angle = 180 - acos(top/bot) * 57.296 ; }
+          else if (r[N*t*d+i*d+0] < 0){angle = acos(top/bot) * 57.296 - 180; }
           if(isnan(angle)) {angle = 180;}
 
           for(unsigned int i_ = 0; i_ < 3 ; i_ = i_ + 1)
