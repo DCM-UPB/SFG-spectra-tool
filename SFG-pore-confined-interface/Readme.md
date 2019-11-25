@@ -1,9 +1,7 @@
 # simulate-SFG
 This program computes the SFG spectrum for a given pore interface system. 
 The spectrum is calculated usig the surface-specific velocity-velocity time correlation function formalism, 
-developed by [Nagata and Co-workers](https://aip.scitation.org/doi/10.1063/1.4931106). Recently, [Kühne and Co-workers](https://www.tandfonline.com/doi/full/10.1080/00268976.2019.1620358)
-have demonstrated that this formalism can quantitatively reproduce the experimental SFG spectra of water/air interface.
-
+developed by [Nagata and Co-workers](https://aip.scitation.org/doi/10.1063/1.4931106). 
 
 ## How this program works?
 
