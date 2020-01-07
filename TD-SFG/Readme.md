@@ -1,5 +1,5 @@
 # simulate-SFG
-This program allows one to computes the time-dependent vibrational SFG spectrum for a given planar interface system. 
+This program allows one to compute the time-dependent vibrational SFG spectrum for a given planar interface system. Using this approach, one can estimate the transistion time from one type of stretching mode to another type of stretching mode. Detailed information of this method can be found in the following references [1,2,3]. 
 
 ## References
 
