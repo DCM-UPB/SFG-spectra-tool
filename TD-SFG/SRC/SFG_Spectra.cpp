@@ -143,7 +143,7 @@ int main(int argc, char** argv)
         { 
           double vibration_cut = 3744.5; // This value changes depending on the water model used.
           if( O_coord_z[N*t+i] >  T1  && O_coord_z[N*t+i] < T2 && vibration[N*t+i] < vibration_cut ) //- for xyz file format
-          ///if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] > 23 && vibration[N*t+i] > 3744.5 ) // - for pdb file format - top side water molecules
+          ///if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] > 23 && vibration[N*t+i] > vibration_cut ) // - for pdb file format - top side water molecules
             { 
               mean_ += 1; 
               for(unsigned int t_ = 0;t_ < tcfl;++t_)
@@ -152,7 +152,7 @@ int main(int argc, char** argv)
                 }
             }  
           else if( O_coord_z[N*t+i] >  B1  && O_coord_z[N*t+i] < B2 && vibration[N*t+i] < vibration_cut ) // - for xyz file format
-           //else if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] < 23 && vibration[N*t+i] > 3744.5 ) //- for pdb file format - bottom side water molecules
+           //else if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] < 23 && vibration[N*t+i] > vibration_cut ) //- for pdb file format - bottom side water molecules
             {
               mean_ += 1;
               for(unsigned int t_ = 0;t_ < tcfl;++t_)
