@@ -141,8 +141,9 @@ int main(int argc, char** argv)
       mean_ = 0;
       for(unsigned int i = 0;i < N;++i)
         { 
-          //if( O_coord_z[N*t+i] >  T1  && O_coord_z[N*t+i] < T2 && vibration[N*t+i] < 3744.5 ) //- for xyz file format
-          if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] > 23 && vibration[N*t+i] > 3744.5 ) // - for pdb file format - top side water molecules
+          double vibration_cut = 3744.5; // This value changes depending on the water model used.
+          if( O_coord_z[N*t+i] >  T1  && O_coord_z[N*t+i] < T2 && vibration[N*t+i] < vibration_cut ) //- for xyz file format
+          ///if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] > 23 && vibration[N*t+i] > 3744.5 ) // - for pdb file format - top side water molecules
             { 
               mean_ += 1; 
               for(unsigned int t_ = 0;t_ < tcfl;++t_)
@@ -150,8 +151,8 @@ int main(int argc, char** argv)
                   vvacf[t_] =  vvacf[t_] + vz[N*(t+T_w)+i] *  v_proj[N*(t+t_+T_w)+i];          //---> Auto correlation
                 }
             }  
-          //else if( O_coord_z[N*t+i] >  B1  && O_coord_z[N*t+i] < B2 && vibration[N*t+i] < 3744.5 ) // - for xyz file format
-           else if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] < 23 && vibration[N*t+i] > 3744.5 ) //- for pdb file format - bottom side water molecules
+          else if( O_coord_z[N*t+i] >  B1  && O_coord_z[N*t+i] < B2 && vibration[N*t+i] < vibration_cut ) // - for xyz file format
+           //else if( Layer[N*t+i] == 1 && O_coord_z[N*t+i] < 23 && vibration[N*t+i] > 3744.5 ) //- for pdb file format - bottom side water molecules
             {
               mean_ += 1;
               for(unsigned int t_ = 0;t_ < tcfl;++t_)
@@ -225,4 +226,3 @@ int main(int argc, char** argv)
   MPI_Finalize();  
   return 0;
 }
-
