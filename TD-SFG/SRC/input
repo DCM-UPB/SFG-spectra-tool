@@ -1,0 +1,36 @@
+1) 20000
+2) 375 
+3) ../Trajectory/planar.pdb   
+4) 3
+5) ../Trajectory/planar.vel 
+6)   15.530   15.530   46.600
+7) 1      
+8) ../Trajectory/vibration.dat                       
+9) 1000
+10) ../Trajectory/planar.SFG
+11) 8 to 12
+12) -8 to -6
+13) 0
+
+1) Trajectory length or no of frames
+2) Number of atoms
+3) Trajectory file name and location (input file). Only xyz file format is accepted
+4) Number of strings (or words) in the second line of the xyz file 
+5) dipole moment and bond polarisability file name and location (output file)
+6) Length of the simulation box in x, y and z direction. PBC applied in x- and y-
+   directions, while free boundary condition is applied in z-direction, i.e., the
+   surface direction.
+7) Time step in femtosecond
+8) vibrational frequencies of the OH modes, which are determined from
+   empirical maps or a short-time wavelet transform (input file).
+9) Time correlation function length (standard length is 1 ps). Larger tcfl will
+   lead to stastical uncertainties in the SFG spectra. Choose the optimum value. 
+10) SFG spectrum file name and location (output file). Quantum correction factor
+   and non-condon approximation are not included. Include explicitly. For
+   more information and simulation details, please check the following articles
+   https://doi.org/10.1063/1.4931106 and
+   https://doi.org/10.1080/00268976.2019.1620358 (<-see Supplementary information)
+11) Surface region on the top side of the interface
+12) Surface region on the bottom side of the interface
+13) T_w - time delay in fms. 
+ 
