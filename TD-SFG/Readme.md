@@ -1,5 +1,5 @@
 # simulate-SFG
-This program computes the time-dependent vibrational SFG spectrum for a given planar interface system.
+This program allows one to computes the time-dependent vibrational SFG spectrum for a given planar interface system. 
 
 ## References
 
