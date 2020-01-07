@@ -62,6 +62,7 @@ int main(int argc, char** argv)
 
 
 //-----pdb file format-----///
+/**
   ifstream infile(filename1);
   for(unsigned int words = 0; words < 10; ++words)
     {
@@ -96,9 +97,10 @@ int main(int argc, char** argv)
     }
   infile.close();
   infile.clear();
+**/
 
 //-----xyz file format-----///
-/**
+
   ifstream infile(filename1);
   for(unsigned int t = 0;t < Traj_len;++t)
     {
@@ -114,7 +116,6 @@ int main(int argc, char** argv)
     }
   infile.close();
   infile.clear();
-***/
 
 
 
@@ -235,7 +236,6 @@ int main(int argc, char** argv)
  
   return 0;
 }
-
 
 
 
