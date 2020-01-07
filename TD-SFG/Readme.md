@@ -1,6 +1,33 @@
 # simulate-SFG
 This program allows one to compute the time-dependent vibrational SFG spectrum for a given planar interface system. Using this approach, one can estimate the transistion time from one type of stretching mode to another type of stretching mode. Detailed information of this method can be found in the following references [1,2,3]. 
 
+## How this program works?
+**System requirements - C++11, Open MPI libraries**
+
+
+Copy your xyz and vibration.dat files to the Trajectory folder. 
+
+```
+cp -r your_files Trajectory/ 
+```
+**Important note: The xyz file should contain only water molecules. The water molecules should be sorted in an order, where the oxygen atom coordinate followed by its two neighbour hydrogen atoms. For reference
+please check this sample file [planar.xyz](https://github.com/DCM-UPB/SFG-spectrum/blob/master/SFG-planar-interface/Trajectory/planar.xyz).**
+
+
+Define the trajectory length, number of atoms, trajectory file name and location,
+length of the simulation box, time step, time correlation function length and the interface regions in the SRC/input file.
+```
+vim SRC/input
+```
+Compile and Execute the program.  
+```
+chmod +x simulate-SFG.sh
+```
+```
+./simulate-SFG.sh
+```
+Plot the SFG spectrum (.SFG), density profile (.DP) simulated in the Trajectory folder.
+
 ## References
 
 1. [T. Ohto, K. Usui, T. Hasegawa, M Bonn, and Y Nagata
