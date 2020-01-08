@@ -16,7 +16,7 @@
 2) Number of atoms
 3) Trajectory file name and location (input file). Only xyz file format is accepted
 4) Number of strings (or words) in the second line of the xyz file 
-5) dipole moment and bond polarisability file name and location (output file)
+5) dipole moment and bond polarisability file name and location (output file, this will be generated automatically)
 6) Length of the simulation box in x, y and z direction. PBC applied in x- and y-
    directions, while free boundary condition is applied in z-direction, i.e., the
    surface direction.
