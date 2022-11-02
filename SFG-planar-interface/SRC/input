@@ -1,16 +1,16 @@
-1) 10000
-2) 843 
-3) ../Trajectory/planar.xyz   
-4) 3
-5) ../Trajectory/planar.vel 
-6)  21.75 21.75 100
-7) 0.6                                  
+1) 3000
+2) 300
+3) ../Trajectory/Trajectory_ZhenghuaFeng.xyz
+4) 2
+5) ../Trajectory/Trajectory_ZhenghuaFeng.vel
+6)  13.6036  13.6036 42.2311 
+7) 0.5                                  
 8) 1000
-9) 6
-10) ../Trajectory/planar.SFG
+9) 2
+10) ../Trajectory/Trajectory_ZhenghuaFeng.SFG
 11) 1 0 0
-12) 8 to 12
-13) -8 to -6
+12) 6 to 10.5
+13) -10.5 to -6
 
 1) Trajectory length or no of frames
 2) Number of atoms
