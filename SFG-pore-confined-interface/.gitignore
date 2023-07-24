@@ -1,0 +1,10 @@
+## rm executables
+*.exe
+
+## xyz file
+.xyz
+.SFG  
+.vel  
+.DP  
+.vvcf  
+

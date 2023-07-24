@@ -61,6 +61,8 @@ double angle_btwn_3points(vector<double> const &r,int i,int t, double a,double b
 }
 
 
+
+
 //----------------------------- Main implementation -----------------------------//
 int main(int argc, char** argv)
 {
@@ -196,7 +198,8 @@ int main(int argc, char** argv)
           double bot =  norm(x1,0,z1) * norm(x2,0,z2)  ;            
           if(r[N*t*d+i*d+0] >=  0){ angle = 180 - acos(top/bot) * 57.296 ; }
           else if (r[N*t*d+i*d+0] < 0){angle = acos(top/bot) * 57.296 - 180; }
-          if(isnan(angle)) {angle = 180;}
+        //  if(isnan(angle)) {angle = 180;}
+          if( angle != angle ) {angle = 180;}
 
           for(unsigned int i_ = 0; i_ < 3 ; i_ = i_ + 1)
             {

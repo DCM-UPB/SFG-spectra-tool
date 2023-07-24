@@ -1,5 +1,6 @@
 rm bin/*
 cd SRC
+module load mpi
 make
 cd ../bin 
 ./SFG_Mu_Alpha.exe 
